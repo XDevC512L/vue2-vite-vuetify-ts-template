@@ -1,0 +1,55 @@
+{
+  "name": "vuetify-template",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vite --open",
+    "preview": "vite preview --open --port 8080",
+    "build": "vite build --out-dir dist",
+    "lint": "eslint src --ext .js,.jsx,.ts,.vue",
+    "lint:fix": "eslint src --fix --ext .js,.jsx,.ts,.vue"
+  },
+  "dependencies": {
+    "@types/qs": "^6.9.7",
+    "@vue/compiler-sfc": "^3.2.26",
+    "axios": "^0.24.0",
+    "file-saver": "^2.0.5",
+    "json2typescript": "^1.5.0-rc.0",
+    "loglevel": "^1.8.0",
+    "qs": "^6.10.2",
+    "tslib": "^2.3.1",
+    "unplugin-vue-components": "^0.17.11",
+    "vite": "^2.7.10",
+    "vite-plugin-vue2": "^1.9.2",
+    "vue": "^2.6.14",
+    "vue-class-component": "^7.2.6",
+    "vue-property-decorator": "^9.1.2",
+    "vue-router": "^3.5.3",
+    "vuetify": "^2.6.2",
+    "vuex": "^3.6.2",
+    "vuex-module-decorators": "^1.2.0",
+    "yorkie": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/file-saver": "^2.0.4",
+    "@typescript-eslint/eslint-plugin": "^5.9.0",
+    "@typescript-eslint/parser": "^5.9.0",
+    "@vue/eslint-config-prettier": "^7.0.0",
+    "@vue/eslint-config-typescript": "^10.0.0",
+    "eslint": "^8.6.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^8.2.0",
+    "lint-staged": "^12.1.5",
+    "prettier": "^2.5.1",
+    "sass": "~1.32.12",
+    "typescript": "^4.5.4",
+    "vue-template-compiler": "^2.6.14",
+    "vuetify-loader": "^1.7.3"
+  },
+  "lint-staged": {
+    "*.{js,jsx,vue,ts,tsx}": [
+      "npm run lint:fix",
+      "git add"
+    ]
+  }
+}
